@@ -1,0 +1,207 @@
+/* Workings */
+#workingsBody {
+	background-image: url('../images/SkillsPayTheBillsBlue.png');
+	background-size: cover;
+	height: 100vh;
+}
+
+.workingsMain {
+	padding: 50px;
+	color: grey;
+	font-size: 110%;
+}
+
+.workingsMain h1 {
+	color: #017c95;
+	font-size: 300%;
+}
+
+.workingsMain ul {
+	padding-left: 50px;
+	font-weight: bold;
+}
+
+.workingsText:hover {
+	background-color: lightgrey;
+	border-radius: 1rem;
+	padding: 10px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+	color: #1a899f;
+}
+
+.workingsList {
+	list-style-type: none;
+}
+
+/* Contact */
+#contactMain {
+	padding-top: 70px;
+}
+
+#contact iframe {
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+#contactLeft {
+	width: 500px;
+	font-size: 14px;
+}
+
+#contactContact {
+	padding: 20px 20px 5px 20px;
+	border-radius: 10px;
+	background-color: lightgrey;
+}
+
+#contactUl {
+	display: flex;
+	list-style-type: none;
+}
+
+.contactLi {
+	padding-left: 30px;
+}
+
+#contactStatus.contactSuccess {
+	background-color: lightgreen;
+	border-radius: 10px;
+	text-align: center;
+	animation: contactStatus 4s ease forwards;
+}
+
+#contactStatus.contactError {
+	background-color: tomato;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	animation: contactStatus 4s ease forwards;
+}
+
+@keyframes contactStatus {
+	0% {
+		opacity: 1;
+		pointer-events: all;
+	}
+	90% {
+		opacity: 1;
+		pointer-events: all;
+	}
+	100% {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
+/* main */
+.navbar .navbar-brand {
+	color: rgba(255, 255, 255, 0.85);
+	font-size: 1rem;
+}
+
+#coverVideo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 1;
+	width: 100%;
+}
+
+.jumbotron {
+	position: relative;
+	overflow: hidden;
+}
+
+.jumbotron .container {
+	position: relative;
+	z-index: 1;
+}
+
+#aboutImage {
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.mainSpeakers:hover {
+	transform: rotate(-1deg);
+	box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+
+.mainRegister ul {
+	list-style-type: none;
+}
+
+.solIcon {
+	padding-left: 16px;
+}
+
+footer {
+	color: rgba(255, 255, 255, 0.85);
+	font-size: 1rem;
+	height: 70px;
+	margin-top: 20px;
+}
+
+#footerLeft {
+	display: inline;
+	float: left;
+}
+
+#footerRight {
+	display: inline;
+	float: right;
+}
+
+@media only screen and (min-width: 300px) {
+	.jumbotron {
+		max-height: 200px;
+	}
+	.jumbotron h1 {
+		padding-top: 20px;
+		font-size: 1.5rem;
+	}
+	.jumbotron p {
+		font-size: 0.9rem;
+	}
+	.btn {
+		font-size: 12px;
+	}
+	#contactContact {
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (min-width: 400px) {
+	.jumbotron {
+		min-height: 270px;
+	}
+	.jumbotron h1 {
+		font-size: 2.5rem;
+	}
+	.jumbotron p {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.jumbotron {
+		min-height: 400px;
+	}
+	.jumbotron h1 {
+		padding: 0;
+		font-size: 5.5rem;
+	}
+	.jumbotron p {
+		font-size: 2rem;
+	}
+	.btn {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	#contactContact {
+		margin-bottom: 0px;
+	}
+}
